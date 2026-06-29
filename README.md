@@ -109,8 +109,8 @@ Project Insights
  application.properties file :
 
 spring.datasource.url=jdbc:mysql://localhost:3306/clickup_db
-spring.datasource.username=root
-spring.datasource.password=root
+spring.datasource.username=${DB_USERNAME:root}
+spring.datasource.password=${DB_PASSWORD:your_password_here}
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
